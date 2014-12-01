@@ -106,7 +106,7 @@ endef
 define nodejs_test
 $$(if $(trace),$$(warning called nodejs_test "$(1)" "$(2)" "$(3)" "$(4)" "$(5)"))
 
-TEST_$(1)_DEPS := $$(call node_addon_deps,$(2),$(1))
+TEST_$(1)_DEPS := $$(call node_addon_deps,$(2),$(1)) dependencies
 
 ifneq ($$(PREMAKE),1)
 
