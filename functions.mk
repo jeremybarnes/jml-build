@@ -200,7 +200,7 @@ $(GEN)/$(CWD)/$(2).pb.cc:	$(SRC)/$(CWD)/$(1)
 
 # We use the add_c++_source to do most of the work, then simply point
 # to the file
-$$(eval $$(call add_c++_source,$(2).pb.cc,$(2).pb,$(GEN),-IXX))
+$$(eval $$(call add_c++_source,$(2).pb.cc,$(2).pb,$(GEN),))
 
 
 # Point to the object file produced by the previous macro
